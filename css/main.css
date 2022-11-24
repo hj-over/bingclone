@@ -525,10 +525,8 @@ html {
 }
 
 .report {
-  position: relative;
+  position: flex;
   display: block;
-  width: 1350px;
-  height: auto;
 }
 .report h3 {
   margin-bottom: 40px;
@@ -537,13 +535,17 @@ html {
   text-align: center;
 }
 .report .report-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  margin: 0 auto;
+  width: 1310px;
 }
 .report .report-wrap .report-left,
 .report .report-wrap .report-right {
+  position: relative;
   display: block;
   border-radius: 30px;
   background: #f9f9f9 no-repeat center;
@@ -562,8 +564,11 @@ html {
   line-height: 1.63;
   letter-spacing: -0.09em;
 }
-.report .report-wrap .report-left span,
-.report .report-wrap .report-right span {
+
+.report-bt {
+  position: absolute;
+  left: 230px;
+  bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,7 +578,11 @@ html {
   color: #fff;
   border-radius: 21.5px;
   border: solid 1px rgba(224, 223, 226, 0.6);
-  background: red center;
+  background: #ed1c24 center;
   background-size: contain;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
-}/*# sourceMappingURL=main.css.map */
+}
+.report-bt a {
+  color: #fff;
+  font-size: 14px;
+}
