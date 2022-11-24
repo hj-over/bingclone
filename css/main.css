@@ -259,6 +259,144 @@ html {
   border: 0;
 }
 
+.slide-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.slide-inner-top {
+  margin: 0 auto;
+}
+
+.slide-inner-top > h3 {
+  font-size: 38px;
+}
+
+.slide-inner-top .slide-inner-prevbtn {
+  position: absolute;
+  top: 170px;
+  left: 100px;
+}
+
+.slide-inner-top .slide-inner-nextbtn {
+  position: absolute;
+  top: 170px;
+  right: 100px;
+}
+
+.slide-inner-top .slide-list {
+  display: flex;
+}
+
+.slide-inner-top .slide-list > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 20px;
+  margin: 12px;
+  transition: all 300ms;
+}
+
+.slide-inner-top .slide-list > li:hover {
+  transform: translateY(-30px);
+}
+
+.slide-inner-top .slide-list > li:hover > a {
+  background: #e82c28;
+  color: #fff;
+}
+
+.slide-inner-top .slide-list > li > img {
+  margin-bottom: 12px;
+}
+
+.slide-inner-top .slide-list > li > a {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 250px;
+  padding: 12px 0;
+}
+
+/* qkxja */
+.slide-inner-bottom {
+  margin: 0 auto;
+}
+
+.slide-inner-bottom .slide-inner-prevbtn {
+  color: #e82c28;
+  position: absolute;
+  top: 520px;
+  left: 100px;
+}
+
+.slide-inner-bottom .slide-inner-nextbtn {
+  position: absolute;
+  top: 520px;
+  right: 100px;
+}
+
+.slide-inner-bottom .slide-list {
+  display: flex;
+}
+
+.slide-inner-bottom .slide-list > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 20px;
+  margin: 12px;
+  width: 250px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  height: 250px;
+}
+
+.slide-inner-bottom .slide-list > li > img {
+  margin-bottom: 12px;
+  padding: 12px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-inner {
+    width: 100vw;
+  }
+  .slide-inner-top .slide-inner-prevbtn,
+.slide-inner-bottom .slide-inner-prevbtn {
+    display: none;
+  }
+  .slide-inner-top .slide-inner-nextbtn,
+.slide-inner-bottom .slide-inner-nextbtn {
+    display: none;
+  }
+  .slide-inner-top .slide-list {
+    flex-wrap: wrap;
+  }
+  .slide-inner-top .slide-list > li > img {
+    width: 220px;
+    height: 220px;
+  }
+  .slide-inner-top .slide-list > li > a {
+    background: transparent;
+    width: 220px;
+  }
+  .slide-inner-top .slide-list > li:hover {
+    transform: translateY(0px);
+  }
+  .slide-inner-top .slide-list > li:hover > a {
+    background: transparent;
+    color: black;
+  }
+  .slide-inner-bottom .slide-list {
+    flex-wrap: wrap;
+  }
+  .slide-inner-bottom .slide-list > li {
+    width: 220px;
+  }
+}
 .cs {
   position: relative;
   display: block;
@@ -438,4 +576,4 @@ html {
   background: red center;
   background-size: contain;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
-}
+}/*# sourceMappingURL=main.css.map */

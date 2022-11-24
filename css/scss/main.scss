@@ -1,40 +1,43 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("font/font.css");
+
+@import "./variables";
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  color: #333;
-  text-decoration: none;
+    color: #333;
+    text-decoration: none;
 }
 
 img {
-  vertical-align: middle;
-  border: 0;
+    vertical-align: middle;
+    border: 0;
 }
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 .wrap {
-  font-family: "binggraeregular";
+    font-family: "binggraeregular";
 
-  margin: 0 auto;
+    margin: 0 auto;
 }
 .clearfix::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  clear: both;
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
 }
 /* 상단 */
 @import "header";
