@@ -3,21 +3,25 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 .slide-inner-top {
     margin: 0 auto;
+    margin-bottom: 120px;
 }
 .slide-inner-top > h3 {
     font-size: $head-nomal;
+    letter-spacing: -1.9px;
+    margin-bottom: $large-ma;
 }
 .slide-inner-top .slide-inner-prevbtn {
     position: absolute;
-    top: 170px;
+    top: 220px;
     left: 100px;
 }
 .slide-inner-top .slide-inner-nextbtn {
     position: absolute;
-    top: 170px;
+    top: 220px;
     right: 100px;
 }
 .slide-inner-top .slide-list {
@@ -51,16 +55,21 @@
 /* qkxja */
 .slide-inner-bottom {
     margin: 0 auto;
+    margin-bottom: 120px;
+}
+.slide-inner-bottom > h3 {
+    font-size: $head-nomal;
+    letter-spacing: -1.9px;
+    margin-bottom: $large-ma;
 }
 .slide-inner-bottom .slide-inner-prevbtn {
-    color: $red-color;
     position: absolute;
-    top: 520px;
+    top: 720px;
     left: 100px;
 }
 .slide-inner-bottom .slide-inner-nextbtn {
     position: absolute;
-    top: 520px;
+    top: 720px;
     right: 100px;
 }
 .slide-inner-bottom .slide-list {
