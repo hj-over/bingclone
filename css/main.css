@@ -184,7 +184,7 @@ html {
 }
 .lang .lang-list a {
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -223,7 +223,7 @@ html {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: #1f1f1f;
 }
 .lang button span:nth-child(1) {
   top: 0;
@@ -308,25 +308,65 @@ html {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+.global-link {
+  position: fixed;
+  top: 900px;
+  right: 30px;
+  z-index: 999999999999;
+}
+
+.global-link .shop-link {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  line-height: 55px;
+  font-size: 14px;
+  background: #fff;
+  margin-bottom: 8px;
+}
+
+.global-link .scroll-bt {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background-color: #1f1f1f;
+  transform: rotate(0.5turn);
+}
+
+.global-link .scroll-bt.down {
+  transform: rotate(1turn);
 }
 
 .slide-inner-top {
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 .slide-inner-top > h3 {
   font-size: 38px;
+  letter-spacing: -1.9px;
+  margin-bottom: 24px;
 }
 
 .slide-inner-top .slide-inner-prevbtn {
   position: absolute;
-  top: 170px;
+  top: 220px;
   left: 100px;
+}
+
+.slide-inner-top .slide-inner-prevbtn > img,
+.slide-inner-bottom .slide-inner-prevbtn > img {
+  filter: opacity(0.5) drop-shadow(0 0 0 #f9f9f9);
 }
 
 .slide-inner-top .slide-inner-nextbtn {
   position: absolute;
-  top: 170px;
+  top: 220px;
   right: 100px;
 }
 
@@ -367,18 +407,24 @@ html {
 /* qkxja */
 .slide-inner-bottom {
   margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.slide-inner-bottom > h3 {
+  font-size: 38px;
+  letter-spacing: -1.9px;
+  margin-bottom: 24px;
 }
 
 .slide-inner-bottom .slide-inner-prevbtn {
-  color: #e82c28;
   position: absolute;
-  top: 520px;
+  top: 720px;
   left: 100px;
 }
 
 .slide-inner-bottom .slide-inner-nextbtn {
   position: absolute;
-  top: 520px;
+  top: 720px;
   right: 100px;
 }
 
@@ -471,7 +517,7 @@ html {
   padding: 55px 45px;
 }
 .cs .cs-top .top-email h4 {
-  font-size: 32px;
+  font-size: 38px;
   padding: 0px 0px 30px;
 }
 .cs .cs-top .top-email .advice {
@@ -483,7 +529,7 @@ html {
   height: 43px;
   border-radius: 21.5px;
   border: solid 1px rgba(224, 223, 226, 0.6);
-  background: red;
+  background: #e82c28;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
 }
 .cs .cs-top .top-email .advice a {
@@ -506,14 +552,14 @@ html {
   font-size: 46.5px;
   font-weight: 600;
   letter-spacing: -2.33px;
-  color: #303030;
+  color: #1f1f1f;
 }
 .cs .cs-top .top-call .time {
   font-size: 16px;
 }
 .cs .cs-top .top-call span {
   font-size: 16px;
-  color: red;
+  color: #e82c28;
 }
 
 .cs-bottom {
@@ -620,4 +666,4 @@ html {
   background: red center;
   background-size: contain;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
-}
+}/*# sourceMappingURL=main.css.map */
