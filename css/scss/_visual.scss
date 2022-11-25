@@ -1,34 +1,54 @@
 .visual {
+  position: relative;
+  display: block;
+  background: url("/images/main/pc_section01_3.jpg") no-repeat top;
+  background-size: cover;
+  padding: 180px 0;
+  .visual-inner {
+    width: 100%;
     position: relative;
-    display: block;
-    background: url("/images/main/pc_section01_3.jpg") no-repeat top;
-    background-size: cover;
-    padding: 180px 0;
-    .visual-inner {
-      width: 100%;
-      position: relative;
-      text-align: center;
-      .search {
-        max-width: 1020px;
-        height: 80px;
-        border-radius: 40px;
-        box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
-        background-color: #fff;
-        margin: 40px auto 0;
-        
-  
-        .search-txt {
-          background: url("/images/layout/search_icon.png")no-repeat center left;
-  
-          width: 78%;
-          height: 100%;
-          padding-left: 30px;
-          font-size: 17px;
-          letter-spacing: -0.85px;
-          text-align: left;
-          border: 0;
+    text-align: center;
+    .search {
+      max-width: 1020px;
+      height: 80px;
+      border-radius: 40px;
+      box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
+      background-color: #fff;
+      margin: 40px auto 0;
+
+      .search-txt {
+        background: url("/images/layout/search_icon.png") no-repeat center left;
+
+        width: 89%;
+        height: 100%;
+        padding-left: 50px;
+        font-size: 17px;
+        letter-spacing: -0.85px;
+        text-align: left;
+        border: 0px solid #fff;
+
+        outline-style: none;
+      }
+
+      .shop {
+        width: 500px;
+        margin: 20px auto;
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+
+          cursor: pointer;
+          li {
+            font-size: 12px;
+            width: 120px;
+            height: 37px;
+            border-radius: 18.5px;
+            border: 1px solid #edecef;
+            line-height: 37px;
+          }
         }
       }
     }
   }
-  
+}

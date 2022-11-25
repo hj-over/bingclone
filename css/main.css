@@ -250,13 +250,31 @@ html {
 }
 .visual .visual-inner .search .search-txt {
   background: url("/images/layout/search_icon.png") no-repeat center left;
-  width: 78%;
+  width: 89%;
   height: 100%;
-  padding-left: 30px;
+  padding-left: 50px;
   font-size: 17px;
   letter-spacing: -0.85px;
   text-align: left;
-  border: 0;
+  border: 0px solid #fff;
+  outline-style: none;
+}
+.visual .visual-inner .search .shop {
+  width: 500px;
+  margin: 20px auto;
+}
+.visual .visual-inner .search .shop ul {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.visual .visual-inner .search .shop ul li {
+  font-size: 12px;
+  width: 120px;
+  height: 37px;
+  border-radius: 18.5px;
+  border: 1px solid #edecef;
+  line-height: 37px;
 }
 
 .slide-inner {
@@ -586,4 +604,4 @@ html {
   background: red center;
   background-size: contain;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
-}/*# sourceMappingURL=main.css.map */
+}
