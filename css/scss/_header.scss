@@ -226,3 +226,22 @@
     }
   }
 }
+
+
+// 태블릿
+@media screen and (max-width: 768px) {
+
+  .header-top{   
+     display: none;
+    .buy {
+     display: none;
+    }
+    .job {
+    display: none;
+    }
+
+  }
+.nav{
+  display: none;
+}
+}
