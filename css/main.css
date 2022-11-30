@@ -153,7 +153,7 @@ html {
   height: 2px;
   background: #e0462e;
 }
-.header .header-inner .header-bottom .header-bottom-inner .nav .gnb > li > a {
+.header .header-inner .header-bottom .header-bottom-inner .nav .gnb > li a {
   position: relative;
   display: block;
   font-size: 20px;
@@ -167,7 +167,7 @@ html {
   .nav
   .gnb
   > li
-  > a:hover {
+  a:hover {
   display: block;
   cursor: pointer;
   color: #e0462e;
@@ -179,8 +179,8 @@ html {
   .nav
   .gnb
   > li
-  > a
-  span {
+  a
+  > span {
   position: relative;
 }
 .header .header-inner .header-bottom .header-bottom-inner .nav .gnb .depth2 {
@@ -237,7 +237,7 @@ html {
 }
 .lang .lang-list a {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 16px;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -276,7 +276,7 @@ html {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #1f1f1f;
+  background: #000;
 }
 .lang button span:nth-child(1) {
   top: 0;
@@ -292,7 +292,7 @@ html {
 .visual {
   position: relative;
   display: block;
-  background: url("/images/main/pc_section01_3.jpg") no-repeat top;
+  background: url("../images/main/pc_section01_3.jpg") no-repeat top;
   background-size: cover;
   padding: 180px 0;
 }
@@ -311,7 +311,7 @@ html {
   margin: 40px auto 0;
 }
 .visual .visual-inner .search .search-txt {
-  background: url("/images/layout/search_icon.png") no-repeat center left;
+  background: url("../images/layout/search_icon.png") no-repeat center left;
   width: 89%;
   height: 100%;
   padding-left: 30px;
@@ -553,7 +553,6 @@ html {
 }
 .cs .cs-wrap {
   position: relative;
-  display: block;
   width: 1310px;
   background: #fff;
   margin: 0 auto;
@@ -669,6 +668,11 @@ html {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .cs-top {
+    flex-direction: column;
+  }
+}
 .report {
   position: flex;
   display: block;
@@ -736,7 +740,9 @@ html {
 .footer {
   position: relative;
   display: block;
-  width: 1903px;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
   height: 397px;
   background: #1b1b1b;
   padding: 40px 50px 30px;
@@ -776,6 +782,11 @@ html {
 .footer .f-sec3 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footer .f-sec3 .copy {
+  font-size: 14px;
+  letter-spacing: -0.15px;
   color: rgba(255, 255, 255, 0.2);
 }
 .footer .f-sec3 .sec3-box {
@@ -815,4 +826,28 @@ html {
     inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
   margin-left: 60px;
   cursor: pointer;
+}
+a {
+  display: flex;
+  align-items: center;
+}
+a img {
+  display: block;
+  margin-right: 12px;
+}
+a span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(153, 153, 153, 0.67);
+  line-height: 1;
+}
+a span strong {
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.footer .f-sec3 .sec3-box .flag-store > img {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%) rotate(270deg);
 }

@@ -10,7 +10,6 @@
   }
   .cs-wrap {
     position: relative;
-    display: block;
     width: 1310px;
     background: $white-color;
     margin: 0 auto;
@@ -129,5 +128,11 @@
         }
       }
     }
+  }
+}
+// 태블릿
+@media screen and (max-width: 768px) {
+  .cs-top {
+    flex-direction: column;
   }
 }
