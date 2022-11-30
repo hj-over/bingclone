@@ -16,17 +16,21 @@
 .global-link .shop-link {
     width: 55px;
     height: 55px;
+    padding-left: 7px;
     border-radius: 50%;
     line-height: 55px;
     font-size: $font-small;
     background: $white-color;
-    margin-bottom: $small-ma;
+    margin-bottom: 12px;
 }
+
 .global-link .scroll-bt {
     width: 55px;
     height: 55px;
+    margin: 0;
     border-radius: 50%;
     border: none;
+    margin-top: 8px;
     background-color: $black-color;
     transform: rotate(0.5turn);
 }
