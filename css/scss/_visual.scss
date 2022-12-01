@@ -1,7 +1,7 @@
 .visual {
   position: relative;
   display: block;
-  background: url("../images/main/pc_section01_3.jpg") no-repeat top;
+  background: url("/images/main/pc_section01_3.jpg") no-repeat top;
   background-size: cover;
   padding: 180px 0;
   .visual-inner {
@@ -23,6 +23,7 @@
 
       .search-txt {
         background: url("/images/layout/search_icon.png") no-repeat center left;
+
         width: 89%;
         height: 100%;
         padding-left: 30px;
@@ -51,6 +52,7 @@
         font-weight: 500;
         line-height: 55px;
       }
+
       .shop {
         width: 500px;
         margin: 20px auto;

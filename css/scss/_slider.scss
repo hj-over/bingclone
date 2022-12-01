@@ -40,6 +40,8 @@
 .slide-inner-top {
     margin: 0 auto;
     margin-bottom: 120px;
+    width: 1650px;
+    overflow: hidden;
 }
 .slide-inner-top > h3 {
     font-size: $head-nomal;
@@ -61,7 +63,10 @@
     right: 100px;
 }
 .slide-inner-top .slide-list {
+    opacity: 0;
     display: flex;
+    transition: all 2s;
+    transform: translateX(0);
 }
 .slide-inner-top .slide-list > li {
     display: flex;
@@ -69,15 +74,35 @@
     justify-content: space-around;
     align-items: center;
     line-height: 20px;
+    transform: translateY(100px);
     margin: $noaml-ma;
     transition: all 300ms;
 }
-.slide-inner-top .slide-list > li:hover {
-    transform: translateY(-30px);
+.slide-inner-top .slide-list > li:nth-child(1) {
+    transition: all 2000ms;
 }
+.slide-inner-top .slide-list > li:nth-child(2) {
+    transition: all 2500ms;
+}
+.slide-inner-top .slide-list > li:nth-child(3) {
+    transition: all 3000ms;
+}
+.slide-inner-top .slide-list > li:nth-child(4) {
+    transition: all 3500ms;
+}
+.slide-inner-top .slide-list > li:nth-child(5) {
+    transition: all 4000ms;
+}
+.slide-inner-top .slide-list > li:nth-child(6) {
+    transition: all 4500ms;
+}
+
 .slide-inner-top .slide-list > li:hover > a {
     background: $red-color;
     color: $white-color;
+}
+.slide-inner-top .slide-list > li:hover {
+    transform: translateY(-30px) !important;
 }
 .slide-inner-top .slide-list > li > img {
     margin-bottom: $noaml-ma;

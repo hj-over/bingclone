@@ -1,138 +1,135 @@
 .cs {
-  position: relative;
-  display: block;
-  margin-bottom: 132px;
-  h3 {
-    font-size: $head-nomal;
-    color: $black-color;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .cs-wrap {
     position: relative;
-    width: 1310px;
-    background: $white-color;
-    margin: 0 auto;
-    box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
-    border-radius: 30px;
-    padding: 60px 45px;
-  }
-  .cs-top {
-    display: flex;
-    .top-email {
-      width: 50%;
-      height: 325px;
-      background: url("../images/layout/sec04_backimg01.png") no-repeat center;
-      background-size: contain;
-      padding: 55px 45px;
-      h4 {
+    display: block;
+    margin-bottom: 132px;
+    h3 {
         font-size: $head-nomal;
-        padding: 0px 0px 30px;
-      }
-      .advice {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 65px;
-        width: 160px;
-        height: 43px;
-        border-radius: 21.5px;
-        border: solid 1px rgba(224, 223, 226, 0.6);
-        background: $red-color;
-        box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 3%);
-        a {
-          color: $white-color;
-          font-size: $font-small;
-          font-weight: 500;
-        }
-      }
-    }
-    .top-call {
-      width: 50%;
-      height: 325px;
-      background: url("../images/layout/sec04_backimg02.png") no-repeat center;
-      background-size: contain;
-      padding: 55px 45px;
-      h4 {
-        font-size: $head-small;
-        padding: 0px 0px 30px;
-      }
-      .tel {
-        font-size: 46.5px;
-        font-weight: 600;
-        letter-spacing: -2.33px;
         color: $black-color;
-      }
-      .time {
-        font-size: $font-nomal;
-      }
-      span {
-        font-size: $font-nomal;
-        color: $red-color;
-      }
+        text-align: center;
+        margin-bottom: 40px;
     }
-  }
+    .cs-wrap {
+        position: relative;
+        display: block;
+        width: 1310px;
+        background: $white-color;
+        margin: 0 auto;
+        box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
+        border-radius: 30px;
+        padding: 60px 45px;
+    }
+    .cs-top {
+        display: flex;
+        .top-email {
+            width: 50%;
+            height: 325px;
+            background: url("../images/layout/sec04_backimg01.png") no-repeat
+                center;
+            background-size: contain;
+            padding: 55px 45px;
+            h4 {
+                font-size: $head-nomal;
+                padding: 0px 0px 30px;
+            }
+            .advice {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 65px;
+                width: 160px;
+                height: 43px;
+                border-radius: 21.5px;
+                border: solid 1px rgba(224, 223, 226, 0.6);
+                background: $red-color;
+                box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 3%);
+                a {
+                    color: $white-color;
+                    font-size: $font-small;
+                    font-weight: 500;
+                }
+            }
+        }
+        .top-call {
+            width: 50%;
+            height: 325px;
+            background: url("../images/layout/sec04_backimg02.png") no-repeat
+                center;
+            background-size: contain;
+            padding: 55px 45px;
+            h4 {
+                font-size: $head-small;
+                padding: 0px 0px 30px;
+            }
+            .tel {
+                font-size: 46.5px;
+                font-weight: 600;
+                letter-spacing: -2.33px;
+                color: $black-color;
+            }
+            .time {
+                font-size: $font-nomal;
+            }
+            span {
+                font-size: $font-nomal;
+                color: $red-color;
+            }
+        }
+    }
 }
 .cs-bottom {
-  display: block;
-  .faq {
-    h4 {
-      display: flex;
-      justify-content: space-between;
-      padding: 47px 0px 30px;
-      span {
-        color: $black-color;
-        font-size: 23px;
-      }
-      a {
-        box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 3%);
-      }
-    }
-    .faq-wrap {
-      display: flex;
-      justify-content: space-between;
-      .faq-left {
-        width: 48%;
-        ul {
-          li {
-            background: $gray-color;
-            box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
-            padding: 0 20px;
-            margin-bottom: 10px;
-            border-radius: 30px;
-            height: 80px;
-            line-height: 80px;
-            a {
-              font-size: $font-large;
-              font-weight: $weight-bold;
+    display: block;
+    .faq {
+        h4 {
+            display: flex;
+            justify-content: space-between;
+            padding: 47px 0px 30px;
+            span {
+                color: $black-color;
+                font-size: 23px;
             }
-          }
-        }
-      }
-      .faq-right {
-        width: 48%;
-        ul {
-          li {
-            background: $gray-color;
-            box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
-            padding: 0 20px;
-            margin-bottom: 10px;
-            border-radius: 30px;
-            height: 80px;
-            line-height: 80px;
             a {
-              font-size: $font-large;
-              font-weight: $weight-bold;
+                box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 3%);
             }
-          }
         }
-      }
+        .faq-wrap {
+            display: flex;
+            justify-content: space-between;
+            .faq-left {
+                width: 48%;
+                ul {
+                    li {
+                        background: $gray-color;
+                        box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
+                        padding: 0 20px;
+                        margin-bottom: 10px;
+                        border-radius: 30px;
+                        height: 80px;
+                        line-height: 80px;
+                        a {
+                            font-size: $font-large;
+                            font-weight: $weight-bold;
+                        }
+                    }
+                }
+            }
+            .faq-right {
+                width: 48%;
+                ul {
+                    li {
+                        background: $gray-color;
+                        box-shadow: inset 0px 5px 10px 0 rgb(121 121 121 / 8%);
+                        padding: 0 20px;
+                        margin-bottom: 10px;
+                        border-radius: 30px;
+                        height: 80px;
+                        line-height: 80px;
+                        a {
+                            font-size: $font-large;
+                            font-weight: $weight-bold;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
-}
-// 태블릿
-@media screen and (max-width: 768px) {
-  .cs-top {
-    flex-direction: column;
-  }
 }

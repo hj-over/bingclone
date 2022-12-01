@@ -1,9 +1,7 @@
 .footer {
   position: relative;
   display: block;
-  max-width: 1920px;
-  margin: 0 auto;
-  width: 100%;
+  width: 1903px;
   height: 397px;
   background: #1b1b1b;
   padding: 40px 50px 30px;
@@ -44,12 +42,7 @@
   .f-sec3 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    .copy {
-      font-size: 14px;
-      letter-spacing: -0.15px;
-      color: rgba(255, 255, 255, 0.2);
-    }
+    color: rgba(255, 255, 255, 0.2);
     .sec3-box {
       display: flex;
       align-items: center;
@@ -88,29 +81,6 @@
           inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
         margin-left: 60px;
         cursor: pointer;
-        @at-root a {
-          display: flex;
-          align-items: center;
-          img {
-            display: block;
-            margin-right: 12px;
-          }
-          span {
-            font-size: 14px;
-            font-weight: 500;
-            color: rgba(153, 153, 153, 0.67);
-            line-height: 1;
-            strong {
-              color: rgba(255, 255, 255, 0.67);
-            }
-          }
-        }
-        > img {
-          position: absolute;
-          top: 50%;
-          right: 30px;
-          transform: translateY(-50%) rotate(270deg);
-        }
       }
     }
   }
