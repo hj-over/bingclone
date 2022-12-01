@@ -138,14 +138,12 @@ html {
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
 }
-
 .header .header-inner .header-bottom .header-bottom-inner .nav .gnb > li a:hover {
   display: block;
   cursor: pointer;
   color: #e0462e;
 }
 .header .header-inner .header-bottom .header-bottom-inner .nav .gnb > li a > span {
-
   position: relative;
 }
 .header .header-inner .header-bottom .header-bottom-inner .nav .gnb .depth2 {
@@ -255,7 +253,7 @@ html {
 .visual {
   position: relative;
   display: block;
-  background: url("../images/main/pc_section01_3.jpg") no-repeat top;
+  background: url("/images/main/pc_section01_3.jpg") no-repeat top;
   background-size: cover;
   padding: 180px 0;
 }
@@ -274,7 +272,7 @@ html {
   margin: 40px auto;
 }
 .visual .visual-inner .search .search-txt {
-  background: url("../images/layout/search_icon.png") no-repeat center left;
+  background: url("/images/layout/search_icon.png") no-repeat center left;
   width: 89%;
   height: 100%;
   padding-left: 30px;
@@ -525,6 +523,7 @@ html {
 }
 .cs .cs-wrap {
   position: relative;
+  display: block;
   width: 1310px;
   background: #fff;
   margin: 0 auto;
@@ -640,11 +639,6 @@ html {
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  .cs-top {
-    flex-direction: column;
-  }
-}
 .report {
   position: flex;
   display: block;
@@ -712,9 +706,7 @@ html {
 .footer {
   position: relative;
   display: block;
-  max-width: 1920px;
-  margin: 0 auto;
-  width: 100%;
+  width: 1903px;
   height: 397px;
   background: #1b1b1b;
   padding: 40px 50px 30px;
@@ -754,11 +746,6 @@ html {
 .footer .f-sec3 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.footer .f-sec3 .copy {
-  font-size: 14px;
-  letter-spacing: -0.15px;
   color: rgba(255, 255, 255, 0.2);
 }
 .footer .f-sec3 .sec3-box {
@@ -796,28 +783,4 @@ html {
   box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
   margin-left: 60px;
   cursor: pointer;
-}
-a {
-  display: flex;
-  align-items: center;
-}
-a img {
-  display: block;
-  margin-right: 12px;
-}
-a span {
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(153, 153, 153, 0.67);
-  line-height: 1;
-}
-a span strong {
-  color: rgba(255, 255, 255, 0.67);
-}
-
-.footer .f-sec3 .sec3-box .flag-store > img {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%) rotate(270deg);
-}
+}/*# sourceMappingURL=main.css.map */
