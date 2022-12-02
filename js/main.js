@@ -1,3 +1,21 @@
+// 헤더
+const menuBt = document.querySelectorAll('menu-bt');
+const depth2Active = document.querySelectorAll('depth2');
+
+
+menuBt.addEventListener("click", function(){
+
+  depth2Active.classList.add('active');
+}); 
+menuBt.addEventListener("click", function(){
+
+    depth2Active.classList.toggle('active');
+    
+ }); 
+
+  
+// 비주얼
+
 // 슬라이더
 const bingreaMat = [
     "아이스크림",
