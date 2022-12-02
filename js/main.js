@@ -6,6 +6,10 @@ const bingreaMat = [
     "커피",
     "주스",
     "음료",
+    "주스",
+    "스낵/디저트",
+    "건강지향",
+    "수출제품",
 ];
 const viewStart = document.querySelectorAll(".view-start");
 const viewMore = document.querySelectorAll(".view");
@@ -15,51 +19,53 @@ const slide = document.querySelector(".slide-list");
 const slideLi = document.querySelectorAll(".slide-list > li ");
 
 //슬라이더 버튼
-let count = 0;
+let slideCount = 0;
 
 slideNextBt.addEventListener("click", () => {
-    switch (count) {
+    switch (slideCount) {
         case 0:
             slide.style.transform = "translateX(-270PX)";
-            count += 1;
-            console.log(count);
+            slideCount++;
+            console.log(slideCount);
             break;
         case 1:
             slide.style.transform = "translateX(-540PX)";
-            count++;
+            slideCount++;
+            console.log(slideCount);
             break;
         case 2:
             slide.style.transform = "translateX(-820PX)";
-            count++;
+            slideCount++;
+            console.log(slideCount);
             break;
     }
 });
 slidePrevBt.addEventListener("click", () => {
-    switch (count) {
+    switch (slideCount) {
         case 3:
             slide.style.transform = "translateX(-540PX)";
-            count += 1;
-            console.log(count);
+            slideCount--;
+            console.log(slideCount);
             break;
-        case 4:
+        case 2:
             slide.style.transform = "translateX(-270PX)";
-            count++;
-            console.log(count);
+            slideCount--;
+            console.log(slideCount);
             break;
-        case 5:
+        case 1:
             slide.style.transform = "translateX(0PX)";
-            count++;
-            console.log(count);
+            slideCount--;
+            console.log(slideCount);
             break;
     }
 });
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 9; i++) {
     viewStart[i].addEventListener("mouseover", () => {
         viewMore[i].innerHTML = "VIEW MORE";
     });
 }
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 9; i++) {
     viewStart[i].addEventListener("mouseout", () => {
         viewMore[i].innerHTML = bingreaMat[i];
     });
@@ -82,11 +88,14 @@ globalUpbtn.addEventListener("click", () => {
     });
 });
 
-window.addEventListener("scroll", () => {
+let windowScrolly = () => {
     if (scrollY > 400) {
         slide.style.opacity = 1;
         for (let i = 0; i < 6; i++) {
             slideLi[i].style.transform = "translateY(0px)";
         }
     }
-});
+    console.log(1);
+};
+
+window.addEventListener("scroll", windowScrolly);

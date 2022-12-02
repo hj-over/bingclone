@@ -96,6 +96,15 @@
 .slide-inner-top .slide-list > li:nth-child(6) {
     transition: all 4500ms;
 }
+.slide-inner-top .slide-list > li:nth-child(7) {
+    transform: translateY(0px);
+}
+.slide-inner-top .slide-list > li:nth-child(8) {
+    transform: translateY(0px);
+}
+.slide-inner-top .slide-list > li:nth-child(9) {
+    transform: translateY(0px);
+}
 
 .slide-inner-top .slide-list > li:hover > a {
     background: $red-color;

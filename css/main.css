@@ -448,6 +448,18 @@ html {
   transition: all 4500ms;
 }
 
+.slide-inner-top .slide-list > li:nth-child(7) {
+  transform: translateY(0px);
+}
+
+.slide-inner-top .slide-list > li:nth-child(8) {
+  transform: translateY(0px);
+}
+
+.slide-inner-top .slide-list > li:nth-child(9) {
+  transform: translateY(0px);
+}
+
 .slide-inner-top .slide-list > li:hover > a {
   background: #e82c28;
   color: #fff;
