@@ -6,16 +6,66 @@ const bingreaMat = [
     "커피",
     "주스",
     "음료",
+    "주스",
+    "스낵/디저트",
+    "건강지향",
+    "수출제품",
 ];
 const viewStart = document.querySelectorAll(".view-start");
 const viewMore = document.querySelectorAll(".view");
+const slideNextBt = document.querySelector(".slide-inner-nextbtn");
+const slidePrevBt = document.querySelector(".slide-inner-prevbtn");
+const slide = document.querySelector(".slide-list");
+const slideLi = document.querySelectorAll(".slide-list > li ");
 
-for (let i = 0; i < 6; i++) {
+//슬라이더 버튼
+let slideCount = 0;
+
+slideNextBt.addEventListener("click", () => {
+    switch (slideCount) {
+        case 0:
+            slide.style.transform = "translateX(-270PX)";
+            slideCount++;
+            console.log(slideCount);
+            break;
+        case 1:
+            slide.style.transform = "translateX(-540PX)";
+            slideCount++;
+            console.log(slideCount);
+            break;
+        case 2:
+            slide.style.transform = "translateX(-820PX)";
+            slideCount++;
+            console.log(slideCount);
+            break;
+    }
+});
+slidePrevBt.addEventListener("click", () => {
+    switch (slideCount) {
+        case 3:
+            slide.style.transform = "translateX(-540PX)";
+            slideCount--;
+            console.log(slideCount);
+            break;
+        case 2:
+            slide.style.transform = "translateX(-270PX)";
+            slideCount--;
+            console.log(slideCount);
+            break;
+        case 1:
+            slide.style.transform = "translateX(0PX)";
+            slideCount--;
+            console.log(slideCount);
+            break;
+    }
+});
+
+for (let i = 0; i < 9; i++) {
     viewStart[i].addEventListener("mouseover", () => {
         viewMore[i].innerHTML = "VIEW MORE";
     });
 }
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 9; i++) {
     viewStart[i].addEventListener("mouseout", () => {
         viewMore[i].innerHTML = bingreaMat[i];
     });
@@ -37,3 +87,15 @@ globalUpbtn.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+let windowScrolly = () => {
+    if (scrollY > 400) {
+        slide.style.opacity = 1;
+        for (let i = 0; i < 6; i++) {
+            slideLi[i].style.transform = "translateY(0px)";
+        }
+    }
+    console.log(1);
+};
+
+window.addEventListener("scroll", windowScrolly);
