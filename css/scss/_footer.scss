@@ -42,6 +42,7 @@
   .f-sec3 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: rgba(255, 255, 255, 0.2);
     .sec3-box {
       display: flex;
@@ -81,6 +82,29 @@
           inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
         margin-left: 60px;
         cursor: pointer;
+        @at-root .storebt {
+          display: flex;
+          align-items: center;
+          img {
+            display: block;
+            margin-right: 12px;
+          }
+          span {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(153, 153, 153, 0.67);
+            letter-spacing: -0.09em;
+            strong {
+              color: rgba(255, 255, 255, 0.67);
+            }
+          }
+        }
+        > img {
+          position: absolute;
+          top: 50%;
+          right: 30px;
+          transform: translateY(-50%) rotate(-90deg);
+        }
       }
     }
   }

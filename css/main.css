@@ -166,33 +166,32 @@ html {
   display: inline-block;
   color: #e0462e;
 }
-
-.lang {
+.header .header-inner .header-bottom .header-bottom-inner .lang {
   display: flex;
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
   font-weight: 800;
 }
-.lang .lang-list {
+.header .header-inner .header-bottom .header-bottom-inner .lang .lang-list {
   position: relative;
 }
-.lang .lang-list:hover .lang-en {
+.header .header-inner .header-bottom .header-bottom-inner .lang .lang-list:hover .lang-en {
   cursor: pointer;
   opacity: 1;
   z-index: 999999;
 }
-.lang .lang-list a {
+.header .header-inner .header-bottom .header-bottom-inner .lang .lang-list a {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: -0.5px;
   text-transform: uppercase;
 }
-.lang .lang-list a img {
+.header .header-inner .header-bottom .header-bottom-inner .lang .lang-list a img {
   margin-left: 5px;
 }
-.lang .lang-list ul {
+.header .header-inner .header-bottom .header-bottom-inner .lang .lang-list ul {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -203,12 +202,12 @@ html {
   box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.05);
   opacity: 0;
 }
-.lang .lang-list ul li {
+.header .header-inner .header-bottom .header-bottom-inner .lang .lang-list ul li {
   padding: 5px 10px;
   text-transform: uppercase;
   text-align: center;
 }
-.lang button {
+.header .header-inner .header-bottom .header-bottom-inner .lang button {
   position: relative;
   display: inline-block;
   width: 26px;
@@ -218,20 +217,20 @@ html {
   border: 0;
   margin-left: 30px;
 }
-.lang button span {
+.header .header-inner .header-bottom .header-bottom-inner .lang button span {
   position: absolute;
   left: 0;
   width: 100%;
   height: 2px;
   background: #000;
 }
-.lang button span:nth-child(1) {
+.header .header-inner .header-bottom .header-bottom-inner .lang button span:nth-child(1) {
   top: 0;
 }
-.lang button span:nth-child(2) {
+.header .header-inner .header-bottom .header-bottom-inner .lang button span:nth-child(2) {
   top: calc(50% - 1px);
 }
-.lang button span:nth-child(3) {
+.header .header-inner .header-bottom .header-bottom-inner .lang button span:nth-child(3) {
   bottom: 0;
 }
 
@@ -261,6 +260,10 @@ html {
   width: 100%;
   position: relative;
   text-align: center;
+}
+.visual .visual-inner .visual-main {
+  max-width: 100%;
+  height: auto;
 }
 .visual .visual-inner .search {
   position: relative;
@@ -321,6 +324,12 @@ html {
 @media screen and (max-width: 768px) {
   .visual .visual-inner .visual-main {
     position: relative;
+    width: 100%;
+  }
+  .visual .visual-inner .visual-main .img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
   }
 }
 .slide-inner {
@@ -533,16 +542,19 @@ html {
 }
 .cs .cs-top {
   display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 .cs .cs-top .top-email {
-  width: 50%;
+  position: relative;
+  width: 48.5%;
   height: 325px;
   background: url("../images/layout/sec04_backimg01.png") no-repeat center;
   background-size: contain;
   padding: 55px 45px;
 }
 .cs .cs-top .top-email h4 {
-  font-size: 38px;
+  font-size: 32px;
   padding: 0px 0px 30px;
 }
 .cs .cs-top .top-email .advice {
@@ -563,7 +575,8 @@ html {
   font-weight: 500;
 }
 .cs .cs-top .top-call {
-  width: 50%;
+  position: relative;
+  width: 48.5%;
   height: 325px;
   background: url("../images/layout/sec04_backimg02.png") no-repeat center;
   background-size: contain;
@@ -639,6 +652,21 @@ html {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .cs-wrap {
+    padding: 31px 13px;
+  }
+  .cs-wrap .cs-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .cs-wrap .cs-top .top-email {
+    background: #eef8fa url("../../images/layout/m_sec04_backimg01.png") no-repeat center/cover;
+  }
+  .cs-wrap .cs-top .top-call {
+    background: #fdf3f2 url("../../images/layout/m_sec04_backimg02.png") no-repeat center/cover;
+  }
+}
 .report {
   position: flex;
   display: block;
@@ -746,6 +774,7 @@ html {
 .footer .f-sec3 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: rgba(255, 255, 255, 0.2);
 }
 .footer .f-sec3 .sec3-box {
@@ -783,4 +812,28 @@ html {
   box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
   margin-left: 60px;
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+}
+.storebt {
+  display: flex;
+  align-items: center;
+}
+.storebt img {
+  display: block;
+  margin-right: 12px;
+}
+.storebt span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(153, 153, 153, 0.67);
+  letter-spacing: -0.09em;
+}
+.storebt span strong {
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.footer .f-sec3 .sec3-box .flag-store > img {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%) rotate(-90deg);
+}

@@ -20,14 +20,17 @@
   }
   .cs-top {
     display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
     .top-email {
-      width: 50%;
+      position: relative;
+      width: 48.5%;
       height: 325px;
       background: url("../images/layout/sec04_backimg01.png") no-repeat center;
       background-size: contain;
       padding: 55px 45px;
       h4 {
-        font-size: $head-nomal;
+        font-size: $head-small;
         padding: 0px 0px 30px;
       }
       .advice {
@@ -49,7 +52,8 @@
       }
     }
     .top-call {
-      width: 50%;
+      position: relative;
+      width: 48.5%;
       height: 325px;
       background: url("../images/layout/sec04_backimg02.png") no-repeat center;
       background-size: contain;
@@ -128,6 +132,26 @@
           }
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .cs-wrap {
+    padding: 31px 13px;
+    .cs-top {
+      display: flex;
+      flex-direction: column;
+      .top-email {
+        background: #eef8fa url("../../images/layout/m_sec04_backimg01.png")
+          no-repeat center/cover;
+      }
+      .top-call {
+        background: #fdf3f2 url("../../images/layout/m_sec04_backimg02.png")
+          no-repeat center/cover;
+        margin-top: 10px;
+      }
+    }
+    .cs-bottom {
     }
   }
 }
