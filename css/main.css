@@ -46,13 +46,13 @@ html {
   width: 100%;
   z-index: 9999999;
 }
-.header:hover .header-bg {
+.header .header-bg.active{
   visibility: visible;
   opacity: 1;
   top: 0;
   transition: all 0.4s;
 }
-.header:hover .depth2 {
+.header.depth2.active {
   visibility: visible !important;
   opacity: 1 !important;
   transition: visibility 0.6s 0.5s, opacity 0.8s 0.5s;
@@ -580,7 +580,7 @@ html {
   width: 1310px;
   background: #fff;
   margin: 0 auto;
-  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 24.3px 2.7px rgba(68, 46, 46, 0.09);
   border-radius: 30px;
   padding: 60px 45px;
 }
@@ -836,5 +836,5 @@ html {
   box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
   margin-left: 60px;
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+}
 
