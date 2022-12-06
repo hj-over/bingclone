@@ -59,3 +59,13 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 768px) {
+  .report-wrap {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .report-left,
+  .report-right {
+    justify-content: space-between;
+  }
+}
