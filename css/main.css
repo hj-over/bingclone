@@ -362,13 +362,13 @@ html {
 }
 
 .global-link .scroll-bt {
-  width: 55px;
-  height: 55px;
-  margin: 0;
+  width: 55px !important;
+  height: 55px !important;
+  margin: 0 !important;
   border-radius: 50%;
   border: none;
   margin-top: 8px;
-  background-color: #1f1f1f;
+  background-color: #1f1f1f !important;
   transform: rotate(0.5turn);
 }
 
@@ -892,4 +892,4 @@ html {
   top: 50%;
   right: 30px;
   transform: translateY(-50%) rotate(-90deg);
-}
+}/*# sourceMappingURL=main.css.map */

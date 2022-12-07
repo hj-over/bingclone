@@ -25,13 +25,13 @@
 }
 
 .global-link .scroll-bt {
-    width: 55px;
-    height: 55px;
-    margin: 0;
+    width: 55px !important;
+    height: 55px !important;
+    margin: 0 !important;
     border-radius: 50%;
     border: none;
     margin-top: 8px;
-    background-color: $black-color;
+    background-color: $black-color !important;
     transform: rotate(0.5turn);
 }
 .global-link .scroll-bt.down {
