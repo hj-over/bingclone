@@ -1,6 +1,5 @@
 .cs {
   position: relative;
-  display: block;
   margin-bottom: 132px;
   max-width: 1310px;
   margin: 0 auto;
@@ -29,7 +28,7 @@
       background-size: contain;
       padding: 55px 45px;
       h4 {
-        font-size: $head-nomal;
+        font-size: $head-small;
         padding: 0px 0px 30px;
       }
       .advice {
@@ -142,16 +141,18 @@
       justify-content: space-between;
       .top-email {
         background: #eef8fa url("../../images/layout/m_sec04_backimg01.png")
-          no-repeat center/cover;
+          no-repeat center/cover !important;
       }
       .top-call {
         background: #fdf3f2 url("../../images/layout/m_sec04_backimg02.png")
-          no-repeat center/cover;
+          no-repeat center/cover !important;
         margin-top: 10px;
       }
     }
     .faq-wrap {
+      display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
   }
 }

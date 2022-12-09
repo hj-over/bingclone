@@ -565,7 +565,6 @@ html {
 }
 .cs {
   position: relative;
-  display: block;
   margin-bottom: 132px;
   max-width: 1310px;
   margin: 0 auto;
@@ -597,7 +596,7 @@ html {
   padding: 55px 45px;
 }
 .cs .cs-top .top-email h4 {
-  font-size: 38px;
+  font-size: 32px;
   padding: 0px 0px 30px;
 }
 .cs .cs-top .top-email .advice {
@@ -704,14 +703,16 @@ html {
     justify-content: space-between;
   }
   .cs-wrap .cs-top .top-email {
-    background: #eef8fa url("../../images/layout/m_sec04_backimg01.png") no-repeat center/cover;
+    background: #eef8fa url("../../images/layout/m_sec04_backimg01.png") no-repeat center/cover !important;
   }
   .cs-wrap .cs-top .top-call {
-    background: #fdf3f2 url("../../images/layout/m_sec04_backimg02.png") no-repeat center/cover;
+    background: #fdf3f2 url("../../images/layout/m_sec04_backimg02.png") no-repeat center/cover !important;
     margin-top: 10px;
   }
   .cs-wrap .faq-wrap {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 }
 .report {
