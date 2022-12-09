@@ -1,5 +1,44 @@
 // 헤더
 
+  // 헤더
+ 
+  const menuBt = document.querySelectorAll(".menu-bt");
+      const headerBg = document.querySelector(".header-bg");
+    //   console.log(menuBt);
+      const depth2Active = document.querySelectorAll(".depth2");
+      
+ 
+    menuBt.addEventListener("mouseover", function(event){
+
+    
+        // a 태그라서 웹브라우저 갱신된다
+      event.preventDefault();
+      menuBt.classList.add("active")
+      headerBg.classList.add("active")
+      depth2Active.classList.add("active")
+      
+
+   
+    
+      }
+    );
+
+    menuBt.addEventListener("mouseover", function (event) {
+      // a 태그라서 웹브라우저 갱신된다
+    event.preventDefault();
+    menuBt.classList.remove("active")
+    headerBg.classList.remove("active")
+    depth2Active.classList.remove("active")
+   
+
+ 
+  
+    }
+  );
+   
+  
+  // 비주얼
+
 // 비주얼
 
 // 슬라이더
